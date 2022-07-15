@@ -82,7 +82,7 @@ li:hover {
   font-size: 5vh;
 }
 
-.packages ul {
+.packages ul, .stoveList ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;

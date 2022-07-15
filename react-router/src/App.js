@@ -12,6 +12,7 @@ import MyAttempt from './components/myAttempt'
 function App() {
 
   const packages = ['Activate your Crystals', 'Monkey Meditation', 'Soak in the Hotsprings', 'Hypnotherapy', 'Mineral Bath']
+  const tryOut = ['Stove spike', 'Stove spoof', 'Stove test', 'Stove monkey']
 
   return (
     <div className="App">
@@ -42,7 +43,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about"  element={<About />}/>
             <Route path="/packages" element={<Packages packages={packages}/>} />
-            <Route path="/firstTry" element={<MyAttempt/>}/>
+            <Route path="/firstTry" element={<MyAttempt tryOut={tryOut}/>}/>
           </Routes>
         </div>
       </Router>
@@ -50,8 +51,7 @@ function App() {
   );
 }
 
-export default App;
-
+export default App; 
 
 
 
